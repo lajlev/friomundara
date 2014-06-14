@@ -203,7 +203,11 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   max-width: 680px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 16px; }
+  @media (min-width: 560px) {
+    body {
+      font-size: 18px; } }
 
 a,
 a:visited {
@@ -214,7 +218,9 @@ a:hover {
   text-decoration: underline; }
 
 .site-header {
-  padding: 10% 0 0; }
+  padding: 10% 0 0;
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s; }
   .site-header h1, .site-header h2 {
     text-transform: lowercase;
     font-size: 22px; }
@@ -223,6 +229,13 @@ a:hover {
   .site-header h2 {
     color: #95a5a6;
     font-weight: 300; }
+
+.about p,
+.timeline,
+.footprint {
+  opacity: 0;
+  -webkit-animation: fadein 2s 3s forwards;
+  animation: fadein 2s 3s forwards; }
 
 .logo {
   margin-bottom: 1em; }
@@ -254,16 +267,16 @@ section {
     @media (min-width: 440px) {
       section p {
         text-align: justify;
-        color: #6d8082; } }
+        color: #3c4747; } }
   section .year {
     font-size: 13px;
-    color: #bfc8c9;
+    color: #a3b1b2;
     margin-bottom: .35em; }
   section h3 {
     text-transform: lowercase;
     margin-bottom: .35em; }
     section h3 span {
-      color: #bfc8c9;
+      color: #a3b1b2;
       font-weight: 300;
       padding: 0 .25em; }
 
@@ -271,7 +284,7 @@ section {
   margin: 2em 0;
   padding: .2em 0 .2em 1.5em;
   border-left: 2px dashed #e67e22;
-  font-size: 13px; }
+  font-size: .8em; }
   .recommendation p a {
     text-decoration: underline; }
   .recommendation footer {
@@ -293,7 +306,7 @@ section {
     padding-top: 5px; }
   .recommendation .title {
     font-weight: 300;
-    color: #bfc8c9; }
+    color: #a3b1b2; }
 
 .about p {
   margin-bottom: 1em; }
@@ -324,3 +337,16 @@ section {
       font-size: 14px;
       padding: .4em 1em;
       margin: 0 .5em; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
