@@ -2,12 +2,13 @@
 
 .cf {
   zoom:1;
+  
   &:before, &:after {
     content: "\0020";
     display: block;
     height: 0;
-    overflow: hidden;
-  }
+    overflow: hidden; }
+
   &:after {
     clear: both;
   }
@@ -41,13 +42,12 @@ a:hover {
 .site-header {
   padding: 10% 0 0;
 
-  -webkit-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
 
   h1, h2 {
     text-transform: lowercase;
-    font-size: 22px;
-  }
+    font-size: 22px; }
 
   h1 {
     color: darken($secondary, 37%); }
@@ -62,8 +62,8 @@ a:hover {
 .timeline,
 .footprint {
   opacity: 0;
-  -webkit-animation: fadein 2s 3s forwards;
-  animation: fadein 2s 3s forwards;
+  -webkit-animation: fadein 2s 0.6s forwards;
+  animation: fadein 2s 0.6s forwards;
 }
 
 .logo {
@@ -134,8 +134,7 @@ section {
   }
 
   footer {
-    margin-top: 1em;
-  }
+    margin-top: 1em; }
 
   img {
     width: 48px;
@@ -145,20 +144,19 @@ section {
   }
   a {
     color: darken($secondary, 15%);
+    
     &:hover {
-      text-decoration: none;
-    }
+      text-decoration: none; }
     
     span {
-      
       display: block;
       line-height: 1.4em;
     }
   }
   .name {
     color: darken($secondary, 15%);
-    padding-top: 5px;
-  }
+    padding-top: 5px; }
+
   .title {
     font-weight: 300;
     color: lighten($secondary, 5%);
