@@ -1,6 +1,7 @@
 .gitignore
+.git-ftp-ignore
 _.sublime-*
-READM<e.md
+README.md
 *.scss
 
 style.css:style.scss
