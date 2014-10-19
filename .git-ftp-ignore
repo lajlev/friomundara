@@ -2,7 +2,8 @@
 .git-ftp-ignore
 _.sublime-*
 README.md
-*.scss
+_reset.scss
+style.scss
 
 style.css:style.scss
 style.css:_reset.scss
