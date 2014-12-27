@@ -104,6 +104,11 @@
 	],
 	"file_history":
 	[
+		"/Users/lajlev/web/archive/portfolio/.gitignore",
+		"/Users/lajlev/web/archive/portfolio/_.sublime-project",
+		"/Users/lajlev/web/archive/portfolio/index.html",
+		"/Users/lajlev/web/archive/portfolio/.git/config",
+		"/Users/lajlev/web/archive/portfolio/.git-ftp-ignore",
 		"/Users/lajlev/web/test/rails/railstutorial/hello/Gemfile",
 		"/Users/lajlev/.bash_profile",
 		"/Users/lajlev/.ssh/config",
@@ -226,16 +231,11 @@
 		"/Users/lajlev/web/device-guides/device-guides/public/javascripts/app/pages/devicesSearch.js",
 		"/Users/lajlev/web/device-guides/device-guides/app/views/devices/_makes.scala.html",
 		"/Users/lajlev/web/device-guides/device-guides/target/scala-2.10/src_managed/main/views/html/layouts/main.template.scala",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/layout/searchGuides.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/views/guides/_view/_editTags.scala.html",
-		"/Users/lajlev/web/device-guides/device-guides/app/views/guides/add.scala.html",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/pages/guides.add.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/views/admin/devices/copyAllGuidesToDevice.scala.html",
-		"/Users/lajlev/web/device-guides/.git/hooks/post-commit"
+		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/layout/searchGuides.less"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 54.0
 	},
 	"find_in_files":
 	{
