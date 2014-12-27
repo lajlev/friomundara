@@ -13,10 +13,22 @@ module.exports = function(grunt) {
           'style.css': 'style.scss'
         }
       }
+    },
+    jade: {
+      compile: {
+        options: {
+          data: {
+            debug: true
+          }
+        },
+        files: {
+          "index.html": ["views/index.jade"]
+        }
+      }
     }
   })
 
   
-  grunt.registerTask('default', ['sass'])
+  grunt.registerTask('default', ['sass', 'jade'])
 
 }

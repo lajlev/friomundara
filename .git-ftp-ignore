@@ -7,6 +7,7 @@ package.json
 style.css.map
 _reset.scss
 style.scss
+views
 
 style.css:style.scss
 style.css:_reset.scss
