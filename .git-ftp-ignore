@@ -2,6 +2,9 @@
 .git-ftp-ignore
 _.sublime-*
 README.md
+Gruntfile.js
+package.json
+style.css.map
 _reset.scss
 style.scss
 
