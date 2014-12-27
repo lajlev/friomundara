@@ -57,3 +57,6 @@ logs
 
 # Files to ignore
 npm-debug.log
+
+.sass-cache
+node_modules
