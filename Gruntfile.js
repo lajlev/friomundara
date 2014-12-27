@@ -15,20 +15,38 @@ module.exports = function(grunt) {
       }
     },
     jade: {
-      compile: {
+      dist: {
         options: {
-          data: {
-            debug: true
+          pretty: true,
+          data: function(dest, src) {
+            // Return an object of data to pass to templates
+            return require('./data.json');
           }
         },
         files: {
           "index.html": ["views/index.jade"]
         }
       }
+    },
+    watch: {
+      styles: {
+        files: 'style.scss',
+        tasks: ['sass'],
+        options: {
+          livereload: true
+        }
+      },
+      views: {
+        files: 'views/*.jade',
+        tasks: ['jade'],
+        options: {
+          livereload: true
+        }
+      }
     }
   })
 
   
-  grunt.registerTask('default', ['sass', 'jade'])
+  grunt.registerTask('default', ['sass', 'jade', 'watch'])
 
 }

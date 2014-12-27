@@ -191,7 +191,7 @@ button, input[type=button] {
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  max-width: 680px;
+  max-width: 580px;
   margin: 0 auto;
   font-size: 16px; }
   @media (min-width: 560px) {
@@ -250,7 +250,6 @@ section {
     color: #4a5758; }
     @media (min-width: 440px) {
       section p {
-        text-align: justify;
         color: #3c4747; } }
   section .year {
     font-size: 13px;
@@ -269,8 +268,10 @@ section {
   padding: 0.2em 0 0.2em 1.5em;
   border-left: 2px dashed #E67E22;
   font-size: 0.8em; }
-  .recommendation p a {
-    text-decoration: underline; }
+  .recommendation p {
+    text-align: justify; }
+    .recommendation p a {
+      text-decoration: underline; }
   .recommendation footer {
     margin-top: 1em; }
   .recommendation img {

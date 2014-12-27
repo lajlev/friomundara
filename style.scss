@@ -1,5 +1,6 @@
 @import "reset";
 
+
 .cf {
   zoom:1;
   
@@ -23,7 +24,7 @@ $secondary: #95A5A6;
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  max-width: 680px;
+  max-width: 580px;
   margin: 0 auto; 
   font-size: 16px;
   @media(min-width: 560px) { 
@@ -97,7 +98,6 @@ section {
   p {
     color: darken($secondary, 30%);
     @media(min-width: 440px) {
-      text-align: justify; 
       color: darken($secondary, 36%);
     }
   }
@@ -127,7 +127,8 @@ section {
   font-size: .8em;
 
   p {
-
+    text-align: justify;
+     
     a {
       text-decoration: underline;
     }
