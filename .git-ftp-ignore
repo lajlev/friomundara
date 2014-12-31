@@ -4,6 +4,7 @@ _.sublime-*
 README.md
 Gruntfile.js
 package.json
+data.json
 style.css.map
 _reset.scss
 style.scss
