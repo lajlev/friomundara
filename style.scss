@@ -26,7 +26,7 @@ body {
   text-align: center;
   max-width: 580px;
   margin: 0 auto; 
-  font-size: 16px;
+  font-size: 18px;
   @media(min-width: 560px) { 
     font-size: 18px;
   }
@@ -110,25 +110,29 @@ section {
   h3 {
     text-transform: lowercase;
     margin-bottom: .35em;
+    display: block;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     
     span {
       color: lighten($secondary, 5%);
       font-weight: 300;
-      padding: 0 .25em;
+      padding: 0 .25em 0 0;
     }
   }
 }
 
-.recommendation {
+blockquote {
   @extend .cf;
   margin: 2em 0;
   padding: .2em 0 .2em 1.5em;
   border-left: 2px dashed $primary;
-  font-size: .8em;
-
+  .timeline & { font-size: .8em }
+  
   p {
     text-align: justify;
-     
+
     a {
       text-decoration: underline;
     }
@@ -138,7 +142,8 @@ section {
     margin-top: 1em; }
 
   img {
-    width: 48px;
+    .timeline & { width: 48px }
+    .about & { width: 58px }
     border-radius: 100%;
     float: left;
     margin-right: 1em;
@@ -168,6 +173,11 @@ section {
   p {
     margin-bottom: 1em;
   }
+  footer {
+    a {
+      text-align: left;
+    }
+  }
 }
 
 .timeline {
@@ -182,13 +192,14 @@ section {
 
 .footprint {
   ul {
-    text-align: center;
+    text-align: center
   }
 
   li {
     display: inline-block;
-    
+
     a {
+      
       display: inline-block;
       font-size: 12px;
       padding: .2em .5em;
@@ -196,22 +207,21 @@ section {
       border-radius: 3px;
       border: 1px solid $primary;
 
-      &:hover {
-        background: $primary;
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-
-    @media(min-width: 440px) {
-      a {
+      @media (min-width: 440px) {
         display: inline-block;
         font-size: 14px;
-        padding: .4em 1em;
-        margin: 0 .5em;
+        padding: 0.4em 1em;
+        margin: 0 0.5em;   
       }
-    }
-  }
+
+      &:hover {
+        background: #E67E22;
+        color: #fff;
+        text-decoration: none; 
+      }
+          
+    }      
+  }  
 }
 
 @-webkit-keyframes fadein {

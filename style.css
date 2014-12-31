@@ -17,64 +17,83 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
   font-size: 100%;
   font-weight: normal;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 article, aside, figure, footer, header, nav, section, details, summary {
-  display: block; }
+  display: block;
+}
 
 /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
 /* Apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* Responsive images and other embedded objects
    Note: keeping IMG here will cause problems if you're using foreground images as sprites.
    If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
-img, object, embed {
-  max-width: 100%; }
+img,
+object,
+embed {
+  max-width: 100%;
+}
 
 /* force a vertical scrollbar to prevent a jumpy page */
 html {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+}
 
 /* we use a lot of ULs that aren't bulleted. 
   don't forget to restore the bullets within content. */
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted #000;
-  cursor: help; }
+  cursor: help;
+}
 
 /* tables still need cellspacing="0" in the markup */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 th {
   font-weight: bold;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 td {
   font-weight: normal;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 hr {
   display: block;
@@ -82,10 +101,12 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 pre {
   white-space: pre;
@@ -95,68 +116,92 @@ pre {
   white-space: pre-line;
   /* CSS 3 (and 2.1 as well, actually) */
   word-wrap: break-word;
-  /* IE */ }
+  /* IE */
+}
 
 input[type="radio"] {
-  vertical-align: text-bottom; }
+  vertical-align: text-bottom;
+}
 
 input[type="checkbox"] {
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 .ie7 input[type="checkbox"] {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 .ie6 input {
-  vertical-align: text-bottom; }
+  vertical-align: text-bottom;
+}
 
 select, input, textarea {
-  font: 99% sans-serif; }
+  font: 99% sans-serif;
+}
 
 table {
   font-size: inherit;
-  font: 100%; }
+  font: 100%;
+}
 
 small {
-  font-size: 85%; }
+  font-size: 85%;
+}
 
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 td, td img {
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 /* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
 sub, sup {
   font-size: 75%;
   line-height: 0;
-  position: relative; }
+  position: relative;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* standardize any monospaced elements */
 pre, code, kbd, samp {
-  font-family: monospace, sans-serif; }
+  font-family: monospace, sans-serif;
+}
 
 /* hand cursor on clickable elements */
-.clickable, label, input[type=button], input[type=submit], input[type=file], button {
-  cursor: pointer; }
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
 button, input, select, textarea {
-  margin: 0; }
+  margin: 0;
+}
 
 /* make buttons play nice in IE */
-button, input[type=button] {
+button,
+input[type=button] {
   width: auto;
-  overflow: visible; }
+  overflow: visible;
+}
 
 /* scale images in IE7 more attractively */
 .ie7 img {
-  -ms-interpolation-mode: bicubic; }
+  -ms-interpolation-mode: bicubic;
+}
 
 /* prevent BG image flicker upon hover 
    (commented out as usage is rare, and the filter syntax messes with some pre-processors)
@@ -167,175 +212,243 @@ button, input[type=button] {
   content: "\0020";
   display: block;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 .clearfix {
-  zoom: 1; }
+  zoom: 1;
+}
 
-.cf, .recommendation {
-  zoom: 1; }
-  .cf:before, .recommendation:before, .cf:after, .recommendation:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  .cf:after, .recommendation:after {
-    clear: both; }
+.cf, blockquote {
+  zoom: 1;
+}
+.cf:before, blockquote:before, .cf:after, blockquote:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after, blockquote:after {
+  clear: both;
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   max-width: 580px;
   margin: 0 auto;
-  font-size: 16px; }
-  @media (min-width: 560px) {
-    body {
-      font-size: 18px; } }
+  font-size: 18px;
+}
+@media (min-width: 560px) {
+  body {
+    font-size: 18px;
+  }
+}
 
-a, a:visited {
+a,
+a:visited {
   color: #E67E22;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .site-header {
   padding: 10% 0 0;
   -webkit-animation: fadein 2s;
-  animation: fadein 2s; }
-  .site-header h1, .site-header h2 {
-    text-transform: lowercase;
-    font-size: 22px; }
-  .site-header h1 {
-    color: #3a4445; }
-  .site-header h2 {
-    color: #95A5A6;
-    font-weight: 300; }
+  animation: fadein 2s;
+}
+.site-header h1, .site-header h2 {
+  text-transform: lowercase;
+  font-size: 22px;
+}
+.site-header h1 {
+  color: #3a4445;
+}
+.site-header h2 {
+  color: #95A5A6;
+  font-weight: 300;
+}
 
-.about p, .timeline, .footprint {
+.about p,
+.timeline,
+.footprint {
   opacity: 0;
   -webkit-animation: fadein 2s 0.6s forwards;
-  animation: fadein 2s 0.6s forwards; }
+  animation: fadein 2s 0.6s forwards;
+}
 
 .logo {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 [class^="icon"] {
   width: 64px;
-  opacity: 0.2;
-  margin-bottom: 3em; }
+  opacity: .2;
+  margin-bottom: 3em;
+}
 
 section {
   padding: 0 1.2em 2em;
-  margin: 2em auto; }
-  section h2 {
-    text-transform: lowercase;
-    font-size: 22px;
-    margin-bottom: 2em;
-    color: #3a4445; }
-  section p, section ul, section .year {
-    max-width: 540px;
-    margin: 0 auto;
-    line-height: 1.4em;
-    color: #6d8082;
-    text-align: left;
-    font-weight: 300; }
+  margin: 2em auto;
+}
+section h2 {
+  text-transform: lowercase;
+  font-size: 22px;
+  margin-bottom: 2em;
+  color: #3a4445;
+}
+section p,
+section ul,
+section .year {
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.4em;
+  color: #6d8082;
+  text-align: left;
+  font-weight: 300;
+}
+section p {
+  color: #4a5758;
+}
+@media (min-width: 440px) {
   section p {
-    color: #4a5758; }
-    @media (min-width: 440px) {
-      section p {
-        color: #3c4747; } }
-  section .year {
-    font-size: 13px;
-    color: #a3b1b2;
-    margin-bottom: 0.35em; }
-  section h3 {
-    text-transform: lowercase;
-    margin-bottom: 0.35em; }
-    section h3 span {
-      color: #a3b1b2;
-      font-weight: 300;
-      padding: 0 0.25em; }
+    color: #3c4747;
+  }
+}
+section .year {
+  font-size: 13px;
+  color: #a3b1b2;
+  margin-bottom: .35em;
+}
+section h3 {
+  text-transform: lowercase;
+  margin-bottom: .35em;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section h3 span {
+  color: #a3b1b2;
+  font-weight: 300;
+  padding: 0 .25em 0 0;
+}
 
-.recommendation {
+blockquote {
   margin: 2em 0;
-  padding: 0.2em 0 0.2em 1.5em;
+  padding: .2em 0 .2em 1.5em;
   border-left: 2px dashed #E67E22;
-  font-size: 0.8em; }
-  .recommendation p {
-    text-align: justify; }
-    .recommendation p a {
-      text-decoration: underline; }
-  .recommendation footer {
-    margin-top: 1em; }
-  .recommendation img {
-    width: 48px;
-    border-radius: 100%;
-    float: left;
-    margin-right: 1em; }
-  .recommendation a {
-    color: #6d8082; }
-    .recommendation a:hover {
-      text-decoration: none; }
-    .recommendation a span {
-      display: block;
-      line-height: 1.4em; }
-  .recommendation .name {
-    color: #6d8082;
-    padding-top: 5px; }
-  .recommendation .title {
-    font-weight: 300;
-    color: #a3b1b2; }
+}
+.timeline blockquote {
+  font-size: 0.8em;
+}
+blockquote p {
+  text-align: justify;
+}
+blockquote p a {
+  text-decoration: underline;
+}
+blockquote footer {
+  margin-top: 1em;
+}
+blockquote img {
+  border-radius: 100%;
+  float: left;
+  margin-right: 1em;
+}
+.timeline blockquote img {
+  width: 48px;
+}
+.about blockquote img {
+  width: 58px;
+}
+blockquote a {
+  color: #6d8082;
+}
+blockquote a:hover {
+  text-decoration: none;
+}
+blockquote a span {
+  display: block;
+  line-height: 1.4em;
+}
+blockquote .name {
+  color: #6d8082;
+  padding-top: 5px;
+}
+blockquote .title {
+  font-weight: 300;
+  color: #a3b1b2;
+}
 
 .about p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
+.about footer a {
+  text-align: left;
+}
 
 .timeline li {
-  margin-bottom: 3.5em; }
-  .timeline li:last-child {
-    margin-bottom: 0; }
+  margin-bottom: 3.5em;
+}
+.timeline li:last-child {
+  margin-bottom: 0;
+}
 
 .footprint ul {
-  text-align: center; }
+  text-align: center;
+}
 .footprint li {
-  display: inline-block; }
+  display: inline-block;
+}
+.footprint li a {
+  display: inline-block;
+  font-size: 12px;
+  padding: .2em .5em;
+  margin: 0 .2em;
+  border-radius: 3px;
+  border: 1px solid #E67E22;
+}
+@media (min-width: 440px) {
   .footprint li a {
     display: inline-block;
-    font-size: 12px;
-    padding: 0.2em 0.5em;
-    margin: 0 0.2em;
-    border-radius: 3px;
-    border: 1px solid #E67E22; }
-    .footprint li a:hover {
-      background: #E67E22;
-      color: #fff;
-      text-decoration: none; }
-  @media (min-width: 440px) {
-    .footprint li a {
-      display: inline-block;
-      font-size: 14px;
-      padding: 0.4em 1em;
-      margin: 0 0.5em; }
- }
+    font-size: 14px;
+    padding: 0.4em 1em;
+    margin: 0 0.5em;
+  }
+}
+.footprint li a:hover {
+  background: #E67E22;
+  color: #fff;
+  text-decoration: none;
+}
 
 @-webkit-keyframes fadein {
   from {
-    opacity: 0; }
-
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
-
+    opacity: 1;
+  }
+}
 @keyframes fadein {
   from {
-    opacity: 0; }
-
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

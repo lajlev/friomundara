@@ -5,10 +5,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
-      options: {
-        sourceMap: true
-      },
       dist: {
+        options: {
+          style: 'expanded'
+        },
         files: {
           'style.css': 'style.scss'
         }
@@ -18,10 +18,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           pretty: true,
-          data: function(dest, src) {
-            // Return an object of data to pass to templates
-            return require('./data.json');
-          }
+          data: require('./data.json')
         },
         files: {
           "index.html": ["views/index.jade"]
@@ -37,7 +34,7 @@ module.exports = function(grunt) {
         }
       },
       views: {
-        files: 'views/*.jade',
+        files: ['views/*.jade', 'data.json'],
         tasks: ['jade'],
         options: {
           livereload: true
