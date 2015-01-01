@@ -27,9 +27,7 @@ body {
   max-width: 580px;
   margin: 0 auto; 
   font-size: 18px;
-  @media(min-width: 560px) { 
-    font-size: 18px;
-  }
+  @media(min-width: 560px) { font-size: 18px }
 }
 
 a,
@@ -126,13 +124,15 @@ section {
 blockquote {
   @extend .cf;
   margin: 2em 0;
-  padding: .2em 0 .2em 1.5em;
-  border-left: 2px dashed $primary;
-  .timeline & { font-size: .8em }
+  
+  .timeline & {
+    font-size: .8em;
+    padding: .2em 0 .2em 1.5em;
+    border-left: 2px dashed $primary; 
+  }
   
   p {
-    text-align: justify;
-
+    @media(min-width: 560px) { text-align: justify }
     a {
       text-decoration: underline;
     }

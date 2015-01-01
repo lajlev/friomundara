@@ -347,14 +347,16 @@ section h3 span {
 
 blockquote {
   margin: 2em 0;
+}
+.timeline blockquote {
+  font-size: .8em;
   padding: .2em 0 .2em 1.5em;
   border-left: 2px dashed #E67E22;
 }
-.timeline blockquote {
-  font-size: 0.8em;
-}
-blockquote p {
-  text-align: justify;
+@media (min-width: 560px) {
+  blockquote p {
+    text-align: justify;
+  }
 }
 blockquote p a {
   text-decoration: underline;
