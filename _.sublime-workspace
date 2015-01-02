@@ -63,23 +63,23 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 368.0,
+		"height": 400.0,
 		"selected_items":
 		[
 			[
-				"sbt",
-				"SBT: Kill SBT"
-			],
-			[
 				"pack",
 				"Package Control: Install Package"
+			],
+			[
+				"sbt",
+				"SBT: Kill SBT"
 			],
 			[
 				"packa",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 417.0
+		"width": 457.0
 	},
 	"console":
 	{
@@ -100,17 +100,30 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/lajlev/web/archive/portfolio"
+		"/Users/lajlev/web/laj.lv",
+		"/Users/lajlev/web/laj.lv/img",
+		"/Users/lajlev/web/laj.lv/views"
 	],
 	"file_history":
 	[
+		"/Users/lajlev/web/laj.lv/style.scss",
+		"/Users/lajlev/web/laj.lv/.git-ftp-ignore",
+		"/Users/lajlev/web/laj.lv/data.json",
+		"/Users/lajlev/web/laj.lv/views/index.jade",
+		"/Users/lajlev/web/laj.lv/Gruntfile.js",
+		"/Users/lajlev/Library/Containers/it.bloop.airmail/Data/Library/Application Support/Airmail/bGFqbGV2QGdtYWlsLmNvbQ==/AttachmentsNg/CALaOCKay0uU-wn=Wf6YynJVb3acyeQ8QOmf729+YH0bxE4n0nQ@mail.gmail.com/data.json",
+		"/Users/lajlev/web/laj.lv/package.json",
+		"/Users/lajlev/web/laj.lv/.gitignore",
+		"/Users/lajlev/web/laj.lv/index.html",
+		"/Users/lajlev/web/laj.lv/bower.json",
+		"/Users/lajlev/web/laj.lv/README",
+		"/Users/lajlev/.bash_profile",
 		"/Users/lajlev/web/archive/portfolio/.gitignore",
 		"/Users/lajlev/web/archive/portfolio/_.sublime-project",
 		"/Users/lajlev/web/archive/portfolio/index.html",
 		"/Users/lajlev/web/archive/portfolio/.git/config",
 		"/Users/lajlev/web/archive/portfolio/.git-ftp-ignore",
 		"/Users/lajlev/web/test/rails/railstutorial/hello/Gemfile",
-		"/Users/lajlev/.bash_profile",
 		"/Users/lajlev/.ssh/config",
 		"/Users/lajlev/.ssh/lajlv/config",
 		"/Users/lajlev/web/test/rails/railstutorial/hello/README.md",
@@ -220,22 +233,11 @@
 		"/Users/lajlev/web/device-guides/device-guides/app/views/helper/customFieldConstructor.scala.html",
 		"/Users/lajlev/web/device-guides/device-guides/app/views/admin/operators/list.scala.html",
 		"/Users/lajlev/web/device-guides/device-guides/app/models/AssetDomain.scala",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/pages/frontpage.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/main_robi.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/operator/robi.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/main_tele2se_iframe.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/operator/rubi.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/controllers/WebContext.scala",
-		"/Users/lajlev/web/device-guides/device-guides/public/javascripts/app/helpers/windowScrollEndEvent.js",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/layout/_main.less",
-		"/Users/lajlev/web/device-guides/device-guides/public/javascripts/app/pages/devicesSearch.js",
-		"/Users/lajlev/web/device-guides/device-guides/app/views/devices/_makes.scala.html",
-		"/Users/lajlev/web/device-guides/device-guides/target/scala-2.10/src_managed/main/views/html/layouts/main.template.scala",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/layout/searchGuides.less"
+		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/pages/frontpage.less"
 	],
 	"find":
 	{
-		"height": 54.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -256,6 +258,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"footer",
+			"about",
+			"\",\n",
+			"just",
+			"text-a",
+			"just",
+			"ftp",
+			"640",
 			"data-device-id",
 			".navbar1",
 			".stepImageText",
@@ -375,15 +385,7 @@
 			"less",
 			"\"),\n",
 			"div[class*=\"edit-\"]",
-			"#pageGuidesView.edit #guide div[class*=\"edit-\"]",
-			"Add step",
-			"add step",
-			"add",
-			"class=\"span4 edit-step\"",
-			"edit",
-			"close",
-			"publis",
-			"#pageGuidesView.edit"
+			"#pageGuidesView.edit #guide div[class*=\"edit-\"]"
 		],
 		"highlight": true,
 		"in_selection": false,

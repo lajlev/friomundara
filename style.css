@@ -265,8 +265,6 @@ a:hover {
 
 .site-header {
   padding: 10% 0 0;
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
 }
 .site-header h1, .site-header h2 {
   text-transform: lowercase;
@@ -280,7 +278,7 @@ a:hover {
   font-weight: 300;
 }
 
-.about p,
+.about,
 .timeline,
 .footprint {
   opacity: 0;
