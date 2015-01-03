@@ -9,43 +9,54 @@ html(lang='en')
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400', rel='stylesheet', type='text/css')  
     link(rel='stylesheet', href='style.css')
   body
-    section.about
-      .site-header
-        img.logo(src='http://laj.lv/img/logo.png', alt='Logo')
+    .wrapper
+      section.about
+        .site-header
+          img.logo(src='http://laj.lv/img/logo.png', alt='Logo')
+          
+        blockquote
+          p= desc
+          footer
+            img(src='img/lajlev.jpg', alt='#{name}')
+            a(href='#{links[0].url}')
+              span.name= name
+              span.title= title
+      //-.about
         
-      blockquote
-        p= desc
-        footer
-          img(src='img/lajlev.jpg', alt='#{name}')
-          a(href='#{links[0].url}')
-            span.name= name
-            span.title= title
+      section.timeline
+        h2 timeline
+        ul
+          each entry in timeline
+            li.entry
+              .year #{entry.to} · #{entry.from}
+              h3
+                span.title= entry.title
+                span @
+                a.org-name(href='#{entry.orgUrl}') #{entry.orgName}
+              p= entry.desc
+
+              each reco in entry.recomendations
+
+                blockquote
+                  p= reco.desc
+                  footer
+                    img(src='img/#{reco.image}', alt='#{reco.name}')
+                    a(href='#{reco.url}', title='#{reco.urlTitle}')
+                      span.name= reco.name
+                      span.title= reco.title
+      //-.timeline
       
-    section.timeline
-      h2 timeline
-      ul
-        each entry in timeline
-          li.entry
-            .year #{entry.to} · #{entry.from}
-            h3
-              span.title= entry.title
-              span @
-              a.org-name(href='#{entry.orgUrl}') #{entry.orgName}
-            p= entry.desc
-
-            each reco in entry.recomendations
-
-              blockquote
-                p= reco.desc
-                footer
-                  img(src='img/#{reco.image}', alt='#{reco.name}')
-                  a(href='#{reco.url}', title='#{reco.urlTitle}')
-                    span.name= reco.name
-                    span.title= reco.title
-    
-    section.footprint
-      h2 Footprint
-      ul
-        each link in links
-          li
-            a(href='#{link.url}') #{link.name}
+      section.footprint
+        h2 Footprint
+        ul
+          each link in links
+            li
+              a(href='#{link.url}') #{link.name}
+      //-.footprint
+    //-.wrapper
+  script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js')
+  script(src='scripts/trianglify.js')
+  script(src='scripts/main.js')
+  //- body
+//- html

@@ -223,34 +223,48 @@ input[type=button] {
   zoom: 1;
 }
 
-.cf, blockquote {
+html {
+  height: 100%;
+}
+
+.cf, .wrapper, section, blockquote {
   zoom: 1;
 }
-.cf:before, blockquote:before, .cf:after, blockquote:after {
+.cf:before, .wrapper:before, section:before, blockquote:before, .cf:after, .wrapper:after, section:after, blockquote:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.cf:after, blockquote:after {
+.cf:after, .wrapper:after, section:after, blockquote:after {
   clear: both;
 }
 
 * {
   box-sizing: border-box;
+  padding: 0;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  max-width: 580px;
-  margin: 0 auto;
+  height: 100%;
   font-size: 18px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 @media (min-width: 560px) {
   body {
     font-size: 18px;
   }
+}
+
+.wrapper {
+  max-width: 580px;
+  opacity: 0;
+  -webkit-animation: fadein 2s 0.6s forwards;
+  animation: fadein 2s 0.6s forwards;
+  margin: 0 auto;
 }
 
 a,
@@ -264,26 +278,18 @@ a:hover {
 }
 
 .site-header {
-  padding: 10% 0 0;
+  padding: 1em 0 0;
 }
 .site-header h1, .site-header h2 {
   text-transform: lowercase;
   font-size: 22px;
 }
 .site-header h1 {
-  color: #3a4445;
+  color: #171b1b;
 }
 .site-header h2 {
-  color: #95A5A6;
+  color: #6d8082;
   font-weight: 300;
-}
-
-.about,
-.timeline,
-.footprint {
-  opacity: 0;
-  -webkit-animation: fadein 2s 0.6s forwards;
-  animation: fadein 2s 0.6s forwards;
 }
 
 .logo {
@@ -297,14 +303,14 @@ a:hover {
 }
 
 section {
-  padding: 0 1.2em 2em;
-  margin: 2em auto;
+  padding: 2em 2em 1em;
+  background: rgba(255, 255, 255, 0.75);
 }
 section h2 {
   text-transform: lowercase;
   font-size: 22px;
   margin-bottom: 2em;
-  color: #3a4445;
+  color: #171b1b;
 }
 section p,
 section ul,
@@ -312,21 +318,21 @@ section .year {
   max-width: 540px;
   margin: 0 auto;
   line-height: 1.4em;
-  color: #6d8082;
+  color: #4a5758;
   text-align: left;
   font-weight: 300;
 }
 section p {
-  color: #4a5758;
+  color: #272e2e;
 }
 @media (min-width: 440px) {
   section p {
-    color: #3c4747;
+    color: #191e1e;
   }
 }
 section .year {
   font-size: 13px;
-  color: #a3b1b2;
+  color: #798d8f;
   margin-bottom: .35em;
 }
 section h3 {
@@ -338,7 +344,7 @@ section h3 {
   text-overflow: ellipsis;
 }
 section h3 span {
-  color: #a3b1b2;
+  color: #798d8f;
   font-weight: 300;
   padding: 0 .25em 0 0;
 }
@@ -374,7 +380,7 @@ blockquote img {
   width: 58px;
 }
 blockquote a {
-  color: #6d8082;
+  color: #4a5758;
 }
 blockquote a:hover {
   text-decoration: none;
@@ -384,12 +390,12 @@ blockquote a span {
   line-height: 1.4em;
 }
 blockquote .name {
-  color: #6d8082;
+  color: #4a5758;
   padding-top: 5px;
 }
 blockquote .title {
   font-weight: 300;
-  color: #a3b1b2;
+  color: #798d8f;
 }
 
 .about p {

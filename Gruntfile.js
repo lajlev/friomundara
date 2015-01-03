@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         }
       },
       views: {
-        files: ['views/*.jade', 'data.json'],
+        files: ['views/*.jade', 'data.json', 'scripts/*.js'],
         tasks: ['jade'],
         options: {
           livereload: true

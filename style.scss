@@ -1,5 +1,10 @@
 @import "reset";
 
+html {
+  height: 100%;
+
+}
+
 
 .cf {
   zoom:1;
@@ -16,18 +21,29 @@
 }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  padding: 0; }
 
 $primary: #E67E22;
-$secondary: #95A5A6;
+$secondary: darken(#95A5A6, 15%);
 
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  max-width: 580px;
-  margin: 0 auto; 
+  height: 100%;
   font-size: 18px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   @media(min-width: 560px) { font-size: 18px }
+}
+
+.wrapper {
+  max-width: 580px;
+  opacity: 0;
+  -webkit-animation: fadein 2s 0.6s forwards;
+  animation: fadein 2s 0.6s forwards;
+  margin: 0 auto;
+  @extend .cf;
 }
 
 a,
@@ -39,7 +55,7 @@ a:hover {
   text-decoration: underline; }
 
 .site-header {
-  padding: 10% 0 0;
+  padding: 1em 0 0;
 
   h1, h2 {
     text-transform: lowercase;
@@ -53,19 +69,7 @@ a:hover {
     font-weight: 300;    
   }
 }
-// .about {
-//   opacity: 0;
-//   -webkit-animation: fadein 2s;
-//   animation: fadein 2s;
-// }
 
-.about,
-.timeline,
-.footprint {
-  opacity: 0;
-  -webkit-animation: fadein 2s 0.6s forwards;
-  animation: fadein 2s 0.6s forwards;
-}
 
 .logo {
   margin-bottom: 1em; }
@@ -76,8 +80,10 @@ a:hover {
   margin-bottom: 3em; }
 
 section {
-  padding: 0 1.2em 2em;
-  margin: 2em auto;
+  padding: 2em 2em 1em;
+
+  background: rgba(100%, 100%, 100%, 0.75);
+  @extend .cf;
 
   h2 {
     text-transform: lowercase;
