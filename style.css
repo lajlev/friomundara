@@ -225,6 +225,7 @@ input[type=button] {
 
 html {
   height: 100%;
+  min-height: 100%;
 }
 
 .cf, .wrapper, section, blockquote {
@@ -249,9 +250,9 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   height: 100%;
+  min-height: 100%;
   font-size: 18px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 @media (min-width: 560px) {
   body {
@@ -262,9 +263,15 @@ body {
 .wrapper {
   max-width: 580px;
   opacity: 0;
-  -webkit-animation: fadein 2s 0.6s forwards;
-  animation: fadein 2s 0.6s forwards;
+  -webkit-animation: fadein 4s 0.6s forwards;
+  animation: fadein 4s 0.6s forwards;
   margin: 0 auto;
+  background: rgba(255, 244, 234, 0.7);
+}
+@media (min-width: 560px) {
+  .wrapper {
+    margin-top: 15%;
+  }
 }
 
 a,
@@ -285,10 +292,10 @@ a:hover {
   font-size: 22px;
 }
 .site-header h1 {
-  color: #171b1b;
+  color: #080808;
 }
 .site-header h2 {
-  color: #6d8082;
+  color: #666;
   font-weight: 300;
 }
 
@@ -304,13 +311,15 @@ a:hover {
 
 section {
   padding: 2em 2em 1em;
-  background: rgba(255, 255, 255, 0.75);
+}
+section:last-child {
+  padding: 0 0 50px;
 }
 section h2 {
   text-transform: lowercase;
   font-size: 22px;
   margin-bottom: 2em;
-  color: #171b1b;
+  color: #080808;
 }
 section p,
 section ul,
@@ -318,21 +327,21 @@ section .year {
   max-width: 540px;
   margin: 0 auto;
   line-height: 1.4em;
-  color: #4a5758;
+  color: #404040;
   text-align: left;
   font-weight: 300;
 }
 section p {
-  color: #272e2e;
+  color: #1a1a1a;
 }
 @media (min-width: 440px) {
   section p {
-    color: #191e1e;
+    color: #0a0a0a;
   }
 }
 section .year {
   font-size: 13px;
-  color: #798d8f;
+  color: #737373;
   margin-bottom: .35em;
 }
 section h3 {
@@ -344,16 +353,14 @@ section h3 {
   text-overflow: ellipsis;
 }
 section h3 span {
-  color: #798d8f;
+  color: #737373;
   font-weight: 300;
   padding: 0 .25em 0 0;
 }
 
-blockquote {
-  margin: 2em 0;
-}
 .timeline blockquote {
   font-size: .8em;
+  margin: 2em 0;
   padding: .2em 0 .2em 1.5em;
   border-left: 2px dashed #E67E22;
 }
@@ -368,6 +375,9 @@ blockquote p a {
 blockquote footer {
   margin-top: 1em;
 }
+.about blockquote footer {
+  font-size: 0.8em;
+}
 blockquote img {
   border-radius: 100%;
   float: left;
@@ -380,7 +390,7 @@ blockquote img {
   width: 58px;
 }
 blockquote a {
-  color: #4a5758;
+  color: #404040;
 }
 blockquote a:hover {
   text-decoration: none;
@@ -390,12 +400,12 @@ blockquote a span {
   line-height: 1.4em;
 }
 blockquote .name {
-  color: #4a5758;
+  color: #404040;
   padding-top: 5px;
 }
 blockquote .title {
   font-weight: 300;
-  color: #798d8f;
+  color: #737373;
 }
 
 .about p {
@@ -419,12 +429,15 @@ blockquote .title {
   display: inline-block;
 }
 .footprint li a {
+  color: #222;
   display: inline-block;
   font-size: 12px;
   padding: .2em .5em;
   margin: 0 .2em;
   border-radius: 3px;
-  border: 1px solid #E67E22;
+  border: 1px solid #222;
+  transition: border-color .5s linear;
+  -webkit-transition: border-color .5s linear;
 }
 @media (min-width: 440px) {
   .footprint li a {
@@ -435,9 +448,8 @@ blockquote .title {
   }
 }
 .footprint li a:hover {
-  background: #E67E22;
-  color: #fff;
   text-decoration: none;
+  border-color: #bf6516;
 }
 
 @-webkit-keyframes fadein {
