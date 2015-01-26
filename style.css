@@ -228,16 +228,16 @@ html {
   min-height: 100%;
 }
 
-.cf, .wrapper, section, blockquote {
+.cf, section, blockquote {
   zoom: 1;
 }
-.cf:before, .wrapper:before, section:before, blockquote:before, .cf:after, .wrapper:after, section:after, blockquote:after {
+.cf:before, section:before, blockquote:before, .cf:after, section:after, blockquote:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.cf:after, .wrapper:after, section:after, blockquote:after {
+.cf:after, section:after, blockquote:after {
   clear: both;
 }
 
@@ -249,10 +249,9 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  height: 100%;
-  min-height: 100%;
   font-size: 18px;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 @media (min-width: 560px) {
   body {
@@ -270,7 +269,7 @@ body {
 }
 @media (min-width: 560px) {
   .wrapper {
-    margin-top: 15%;
+    margin-top: 3em;
   }
 }
 
@@ -284,19 +283,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.site-header {
-  padding: 1em 0 0;
-}
-.site-header h1, .site-header h2 {
-  text-transform: lowercase;
-  font-size: 22px;
-}
-.site-header h1 {
-  color: #080808;
-}
-.site-header h2 {
-  color: #666;
-  font-weight: 300;
+h1 {
+  font-size: 32px;
+  margin-top: 3em;
+  color: #FFF;
+  text-shadow: #888 0px 2px 3px;
+  font-weight: 900;
 }
 
 .logo {

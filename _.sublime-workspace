@@ -101,23 +101,26 @@
 	"expanded_folders":
 	[
 		"/Users/lajlev/web/laj.lv",
-		"/Users/lajlev/web/laj.lv/img",
+		"/Users/lajlev/web/laj.lv/scripts",
 		"/Users/lajlev/web/laj.lv/views"
 	],
 	"file_history":
 	[
-		"/Users/lajlev/web/laj.lv/style.scss",
-		"/Users/lajlev/web/laj.lv/.git-ftp-ignore",
-		"/Users/lajlev/web/laj.lv/data.json",
+		"/Users/lajlev/web/laj.lv/scripts/main.js",
 		"/Users/lajlev/web/laj.lv/views/index.jade",
+		"/Users/lajlev/web/laj.lv/data.json",
+		"/Users/lajlev/web/laj.lv/style.scss",
+		"/Users/lajlev/.bash_profile",
 		"/Users/lajlev/web/laj.lv/Gruntfile.js",
+		"/Users/lajlev/web/laj.lv/scripts/trianglify.js",
+		"/Users/lajlev/web/laj.lv/_.sublime-project",
+		"/Users/lajlev/web/laj.lv/.git-ftp-ignore",
 		"/Users/lajlev/Library/Containers/it.bloop.airmail/Data/Library/Application Support/Airmail/bGFqbGV2QGdtYWlsLmNvbQ==/AttachmentsNg/CALaOCKay0uU-wn=Wf6YynJVb3acyeQ8QOmf729+YH0bxE4n0nQ@mail.gmail.com/data.json",
 		"/Users/lajlev/web/laj.lv/package.json",
 		"/Users/lajlev/web/laj.lv/.gitignore",
 		"/Users/lajlev/web/laj.lv/index.html",
 		"/Users/lajlev/web/laj.lv/bower.json",
 		"/Users/lajlev/web/laj.lv/README",
-		"/Users/lajlev/.bash_profile",
 		"/Users/lajlev/web/archive/portfolio/.gitignore",
 		"/Users/lajlev/web/archive/portfolio/_.sublime-project",
 		"/Users/lajlev/web/archive/portfolio/index.html",
@@ -230,10 +233,7 @@
 		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/vendor/bootstrap/layouts.less",
 		"/Users/lajlev/web/device-guides/device-guides/conf/play.plugins",
 		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/main_airtel.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/views/helper/customFieldConstructor.scala.html",
-		"/Users/lajlev/web/device-guides/device-guides/app/views/admin/operators/list.scala.html",
-		"/Users/lajlev/web/device-guides/device-guides/app/models/AssetDomain.scala",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/pages/frontpage.less"
+		"/Users/lajlev/web/device-guides/device-guides/app/views/helper/customFieldConstructor.scala.html"
 	],
 	"find":
 	{
@@ -258,6 +258,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"path",
+			"15%",
+			"sec",
+			"fade",
+			"rbga",
+			"heig",
+			"fade",
 			"footer",
 			"about",
 			"\",\n",
@@ -378,14 +385,7 @@
 			"add.title.help",
 			"os",
 			"ctx",
-			"os",
-			"add.title.help",
-			"DEV",
-			"Guides available on this guide",
-			"less",
-			"\"),\n",
-			"div[class*=\"edit-\"]",
-			"#pageGuidesView.edit #guide div[class*=\"edit-\"]"
+			"os"
 		],
 		"highlight": true,
 		"in_selection": false,
