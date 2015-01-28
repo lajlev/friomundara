@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"css",
-				"css	.css() - single"
+				"h",
+				"height"
+			],
+			[
+				"bg",
+				"bgi	background-image: url(${0});"
 			],
 			[
 				"pos",
-				"pos-r	position: relative;"
+				"pos-f	position: fixed;"
+			],
+			[
+				"f",
+				"fixed"
+			],
+			[
+				"bac",
+				"background-attachment"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"css",
+				"css	.css() - single"
 			],
 			[
 				"me",
@@ -71,6 +91,10 @@
 				"Package Control: Install Package"
 			],
 			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
 				"sbt",
 				"SBT: Kill SBT"
 			],
@@ -106,10 +130,11 @@
 	],
 	"file_history":
 	[
-		"/Users/lajlev/web/laj.lv/scripts/main.js",
 		"/Users/lajlev/web/laj.lv/views/index.jade",
-		"/Users/lajlev/web/laj.lv/data.json",
+		"/Users/lajlev/web/laj.lv/scripts/main.js",
 		"/Users/lajlev/web/laj.lv/style.scss",
+		"/Users/lajlev/web/laj.lv/.git/config",
+		"/Users/lajlev/web/laj.lv/data.json",
 		"/Users/lajlev/.bash_profile",
 		"/Users/lajlev/web/laj.lv/Gruntfile.js",
 		"/Users/lajlev/web/laj.lv/scripts/trianglify.js",
@@ -232,12 +257,11 @@
 		"/Users/lajlev/web/device-guides/device-guides/app/views/layouts/_ga.scala.html",
 		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/vendor/bootstrap/layouts.less",
 		"/Users/lajlev/web/device-guides/device-guides/conf/play.plugins",
-		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/main_airtel.less",
-		"/Users/lajlev/web/device-guides/device-guides/app/views/helper/customFieldConstructor.scala.html"
+		"/Users/lajlev/web/device-guides/device-guides/app/assets/less/main_airtel.less"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{

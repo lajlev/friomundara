@@ -27,6 +27,9 @@ $primary: #E67E22;
 $secondary: #666;
 
 body {
+  // Scrolling hack for chrome
+  transform: translate3d(0,0,0);
+
   font-family: 'Lato', sans-serif;
   text-align: center;
   font-size: 18px;
