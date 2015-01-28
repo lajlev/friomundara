@@ -247,7 +247,6 @@ html {
 }
 
 body {
-  transform: translate3d(0, 0, 0);
   font-family: 'Lato', sans-serif;
   text-align: center;
   font-size: 18px;
